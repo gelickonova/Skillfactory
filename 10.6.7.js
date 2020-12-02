@@ -10,7 +10,7 @@ function arr(array) {
     let odd = 0;
     let even = 0;
     array.forEach(function(item){
-        if (typeof item === 'number')
+        if (typeof item === 'number' && !isNaN(item))
             if (item === 0) zeros++;
             else if (item % 2 === 0) even++;
             else odd++;
