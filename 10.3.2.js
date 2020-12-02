@@ -1,5 +1,5 @@
 function func(x){
-    let y = typeof x;
+    const y = typeof x;
     switch(y){
         case 'number':
             console.log (`${x} - число`);
